@@ -19,3 +19,5 @@ except FileNotFoundError as e:
     print("Podany plik nie istnieje!", e)
 except Exception as e:
     print("Wystąpił błąd.", e)
+finally:
+    if file: file.close()
